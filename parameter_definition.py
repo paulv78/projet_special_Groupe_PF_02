@@ -29,10 +29,10 @@ def parameter_definition(dataframe):
     if c1 in combinations or c2 in combinations:
         # Si c'est le cas, générer le graphique avec le module approprié
         if c1 in combinations:
-            graph2_cleaned.plot_frequency_count_by_hour_by_c2(dataframe, c1, c2)
+            graph2.plot_frequency_count_by_hour_by_c2(dataframe, c1, c2)
         else:
-            graph2_cleaned.plot_frequency_count_by_hour_by_c2(dataframe, c2, c1)
+            graph2.plot_frequency_count_by_hour_by_c2(dataframe, c2, c1)
     # Si aucun des critères choisis ne nécessite un traitement particulier
     else:
         # Générer le graphique avec le module standard
-        graph3_cleaned.plot_frequency_count_by_c1_by_c2(dataframe, c1, c2)
+        graph3.plot_frequency_count_by_c1_by_c2(dataframe, c1, c2)
